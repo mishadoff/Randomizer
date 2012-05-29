@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Randomizer</string>
+    
+    <string name="diceButton">Dice</string>
+    <string-array name="diceType">
+        <item>d2</item>
+        <item>d4</item>
+        <item>d6</item>
+        <item>d8</item>
+        <item>d100</item>
+    </string-array>
+    
+    <string name="int_gen">Custom int generator</string>
+    <string name="intButtonHandler">intButtonHandler</string>
+    <string name="int_from">From:</string>
+    <string name="int_to">To:</string>
+    <string name="int_generate">Generate</string>
+    <string name="intGenerateHandler">intGenerateHandler</string>
+    <string name="intResult">Result:</string>
+    
+    <string name="double_gen">Custom double generator</string>
+    <string name="doubleGenerateHandler">doubleGenerateHandler</string>
+    
+    <string name="about">About</string>
+    
+</resources>
