@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class RandomizerActivity extends Activity {
 
@@ -13,6 +14,18 @@ public class RandomizerActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.randomizer);
     }
+	
+	public void flipCoinClick(View view){
+		Toast.makeText(this, "Flip coin click!", Toast.LENGTH_SHORT).show();
+		return;
+	}
+	
+	public void diceRollerClick(View view){
+		Toast.makeText(this, "Dice Roller click", Toast.LENGTH_SHORT).show();
+		return;
+	}
+	
+	
 	
 	public void diceButtonHandler(View view){
     	Intent intent = new Intent(RandomizerActivity.this, DiceActivity.class);

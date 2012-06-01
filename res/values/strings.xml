@@ -3,6 +3,14 @@
 
     <string name="app_name">Randomizer</string>
     
+    <!-- Main screen -->
+    
+    	<!-- Flip coin resources -->
+    	<string name="flipCoinDescription">Flip Coin!</string>
+    
+    	<!-- Dice roller resources -->
+    	<string name="diceRollerDescription">Dice Roll!</string>	
+    	
     <string name="diceButton">Dice</string>
     <string-array name="diceType">
         <item>d2</item>

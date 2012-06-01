@@ -1,35 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:stretchColumns="*" >
 
-    <Button
-        android:id="@+id/dice_button"
+    <TableRow
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/diceButton"
-        android:onClick="diceButtonHandler" />
-    
-    <Button
-        android:id="@+id/int_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/int_gen"
-        android:onClick="intButtonHandler" />
+        android:layout_height="match_parent"
+        android:layout_weight="0.25" >
 
-    <Button
-        android:id="@+id/double_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/double_gen"
-        android:onClick="doubleButtonHandler" />
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" 
+            android:layout_gravity="center"
+            android:src="@drawable/flipcoin_main" />
 
-    <Button
-        android:id="@+id/about_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/about"
-        android:onClick="aboutButtonHandler" />
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:src="@drawable/diceroller_main" />
+    </TableRow>
 
-</LinearLayout>
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:src="@drawable/cards_main" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:src="@drawable/lottery_helper_main" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25" >
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:src="@drawable/bitmap_generator_main" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:src="@drawable/custom_main" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25" >
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:src="@drawable/help_main" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:src="@drawable/about_main" />
+    </TableRow>
+
+</TableLayout>
