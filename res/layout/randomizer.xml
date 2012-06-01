@@ -11,88 +11,101 @@
         android:layout_weight="0.25" >
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/main_button_flip"
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="0.5" 
             android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:contentDescription="@string/flipCoinDescription"
+            android:onClick="flipCoinClick"
             android:src="@drawable/flipcoin_main" />
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/main_button_dice"
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="0.5"
             android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:contentDescription="@string/diceRollerDescription"
+            android:onClick="diceRollerClick"
             android:src="@drawable/diceroller_main" />
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.25" >
 
         <ImageButton
-            android:id="@+id/imageButton1"
+            android:id="@+id/main_button_cards"
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="0.5"
             android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:contentDescription="@string/cardsDescription"
+            android:onClick="cardsClick"
             android:src="@drawable/cards_main" />
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/main_button_lottery"
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="0.5"
             android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:contentDescription="@string/lotteryHelperDescription"
+            android:onClick="lotteryHelperClick"
             android:src="@drawable/lottery_helper_main" />
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.25" >
 
         <ImageButton
-            android:id="@+id/imageButton5"
+            android:id="@+id/main_button_bitmap"
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="0.5"
             android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:contentDescription="@string/bitmapGeneratorDescription"
+            android:onClick="bitmapGeneratorClick"
             android:src="@drawable/bitmap_generator_main" />
 
         <ImageButton
-            android:id="@+id/imageButton6"
+            android:id="@+id/main_button_custom"
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="0.5"
             android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:contentDescription="@string/customDescription"
+            android:onClick="customClick"
             android:src="@drawable/custom_main" />
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.25" >
 
         <ImageButton
-            android:id="@+id/imageButton7"
+            android:id="@+id/main_button_help"
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="0.5"
             android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:contentDescription="@string/helpDescription"
+            android:onClick="helpClick"
             android:src="@drawable/help_main" />
 
         <ImageButton
-            android:id="@+id/imageButton8"
+            android:id="@+id/main_button_about"
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="0.5"
             android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:contentDescription="@string/aboutDescription"
+            android:onClick="aboutClick"
             android:src="@drawable/about_main" />
     </TableRow>
 

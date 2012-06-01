@@ -11,6 +11,25 @@
     	<!-- Dice roller resources -->
     	<string name="diceRollerDescription">Dice Roll!</string>	
     	
+    	<!-- Cards resources -->
+    	<string name="cardsDescription">Play with cards</string>	
+    	
+    	<!-- Lottery helper resources -->
+    	<string name="lotteryHelperDescription">Stuck with lottery?</string>	
+    	
+    	<!-- Custom generator resources -->
+    	<string name="customDescription">Make your own generator</string>	
+    	
+    	<!-- Bitmap generator resources -->
+    	<string name="bitmapGeneratorDescription">Create random pics</string>
+    
+    	<!-- Help section resources -->
+    	<string name="helpDescription">What to do?</string>	
+    	
+    	<!-- About section resources -->
+    	<string name="aboutDescription">If you interested</string>	
+    	
+    	
     <string name="diceButton">Dice</string>
     <string-array name="diceType">
         <item>d2</item>

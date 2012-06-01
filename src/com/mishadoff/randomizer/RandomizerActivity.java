@@ -25,6 +25,36 @@ public class RandomizerActivity extends Activity {
 		return;
 	}
 	
+	public void cardsClick(View view){
+		Toast.makeText(this, "Cards click!", Toast.LENGTH_SHORT).show();
+		return;
+	}
+	
+	public void lotteryHelperClick(View view){
+		Toast.makeText(this, "Lottery helper click", Toast.LENGTH_SHORT).show();
+		return;
+	}
+	
+	public void bitmapGeneratorClick(View view){
+		Toast.makeText(this, "Bitmap generator click!", Toast.LENGTH_SHORT).show();
+		return;
+	}
+	
+	public void customClick(View view){
+		Toast.makeText(this, "Custom click", Toast.LENGTH_SHORT).show();
+		return;
+	}
+	
+	public void helpClick(View view){
+		Toast.makeText(this, "Help click!", Toast.LENGTH_SHORT).show();
+		return;
+	}
+	
+	public void aboutClick(View view){
+		Toast.makeText(this, "About click", Toast.LENGTH_SHORT).show();
+		return;
+	}
+	
 	
 	
 	public void diceButtonHandler(View view){
