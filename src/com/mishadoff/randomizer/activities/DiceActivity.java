@@ -1,4 +1,6 @@
-package com.mishadoff.randomizer;
+package com.mishadoff.randomizer.activities;
+
+import com.mishadoff.randomizer.R;
 
 import android.app.Activity;
 import android.graphics.Canvas;

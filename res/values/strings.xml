@@ -7,9 +7,14 @@
     
     	<!-- Flip coin resources -->
     	<string name="flipCoinDescription">Flip Coin!</string>
-    
+    	<string name="flipActionLabel">Flip!</string>
+    	<string name="flipResultHead">Head</string>
+    	<string name="flipResultTail">Tail</string>
+    	
+    	
     	<!-- Dice roller resources -->
     	<string name="diceRollerDescription">Dice Roll!</string>	
+    	<string name="diceButtonLabel">Roll!</string>
     	
     	<!-- Cards resources -->
     	<string name="cardsDescription">Play with cards</string>	

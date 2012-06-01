@@ -1,4 +1,6 @@
-package com.mishadoff.randomizer;
+package com.mishadoff.randomizer.activities;
+
+import com.mishadoff.randomizer.R;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -16,8 +18,8 @@ public class RandomizerActivity extends Activity {
     }
 	
 	public void flipCoinClick(View view){
-		Toast.makeText(this, "Flip coin click!", Toast.LENGTH_SHORT).show();
-		return;
+		Intent intent = new Intent(RandomizerActivity.this, FlipCoinActivity.class);
+        startActivity(intent);
 	}
 	
 	public void diceRollerClick(View view){

@@ -1,6 +1,8 @@
-package com.mishadoff.randomizer;
+package com.mishadoff.randomizer.activities;
 
 import java.text.DecimalFormat;
+
+import com.mishadoff.randomizer.R;
 
 import android.app.Activity;
 import android.os.Bundle;
