@@ -1,13 +1,14 @@
 package com.mishadoff.randomizer.activities;
 
-import com.mishadoff.randomizer.R;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Toast;
+
+import com.mishadoff.randomizer.R;
 
 public class RandomizerActivity extends Activity {
 
@@ -53,11 +54,16 @@ public class RandomizerActivity extends Activity {
 	}
 	
 	public void aboutClick(View view){
-		Toast.makeText(this, "About click", Toast.LENGTH_SHORT).show();
-		return;
+		// TODO extract to resource
+    	new AlertDialog.Builder(this).setMessage("Author: Mykhailo Kozik\nVersion: 0.0.2").show();
 	}
 	
-	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		super.onCreateOptionsMenu(menu);
+		menu.add(0, Menu.FIRST, 0, R.string.app_name).setIcon(R.drawable.diceroller_main);
+		return true;
+	}
 	
 	public void diceButtonHandler(View view){
     	Intent intent = new Intent(RandomizerActivity.this, DiceActivity.class);
@@ -72,10 +78,5 @@ public class RandomizerActivity extends Activity {
     public void doubleButtonHandler(View view){
     	Intent intent = new Intent(RandomizerActivity.this, DoubleActivity.class);
         startActivity(intent);
-    }
-    
-    public void aboutButtonHandler(View view){
-    	// TODO extract to resource
-    	new AlertDialog.Builder(this).setMessage("Author: Mykhailo Kozik\nVersion: 0.0.1").show();
     }
 }
