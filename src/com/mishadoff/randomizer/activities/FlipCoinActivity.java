@@ -11,19 +11,20 @@ import com.mishadoff.randomizer.R;
 import com.mishadoff.randomizer.util.FlipCoinGenerator;
 
 public class FlipCoinActivity extends Activity {
+	private ImageView imageView;
+	private TextView textView;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.flipcoin_view);
+			imageView = (ImageView)findViewById(R.id.coin_image);
+			textView = (TextView)findViewById(R.id.flip_summary);
 	}
 
 	public void flipCoinClick(View view){
 		// generate
 		boolean result = FlipCoinGenerator.flip();
-		// get image view
-		ImageView imageView = (ImageView)findViewById(R.id.coin_image);
-		TextView textView = (TextView)findViewById(R.id.flip_summary);
-		
 		// parameters to change
 		// TODO summary detection
 		int summaryResource = 0;
@@ -37,9 +38,7 @@ public class FlipCoinActivity extends Activity {
 			imageResource = R.drawable.tail_ukr;
 			summaryResource = R.string.flipResultTail;
 		}
-		
 		imageView.setImageResource(imageResource);
 		textView.setText(summaryResource, BufferType.NORMAL);
-
 	}
 }
