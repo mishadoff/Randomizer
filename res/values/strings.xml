@@ -4,7 +4,28 @@
     <string name="app_name">Randomizer</string>
     
     <!-- Main screen -->
-    
+    	<!-- Menu options -->
+    	<string name="optionsTitle">Preferences</string>
+
+    	<string name="optLanguage">Language</string>
+    					<!-- TODO add more languages -->
+    					<!-- TODO insert flags here -->
+    	<string-array name="optLanguages_spinner">
+    	    <item>English</item>
+    	    <item>Ukrainian</item>
+    	    <item>Russian</item>
+    	</string-array>
+    	
+    	<string name="optRandomStrategy">Random strategy</string>
+    	
+    	<string-array name="optRandomStrategies_spinner">
+    	    <item>Default</item>
+    	    <item>Algorithm</item>
+    	    <item>Random.org</item>
+    	</string-array>
+    	
+    	<string name="optDelay">Use delay</string>
+    	
     	<!-- Flip coin resources -->
     	<string name="flipCoinDescription">Flip Coin!</string>
     	<string name="flipActionLabel">Flip!</string>

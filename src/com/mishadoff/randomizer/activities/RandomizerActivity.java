@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -61,22 +62,16 @@ public class RandomizerActivity extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
-		menu.add(0, Menu.FIRST, 0, R.string.app_name).setIcon(R.drawable.diceroller_main);
+		menu.add(0, 0, Menu.NONE, R.string.optionsTitle).setIcon(R.drawable.settings_main);
 		return true;
 	}
 	
-	public void diceButtonHandler(View view){
-    	Intent intent = new Intent(RandomizerActivity.this, DiceActivity.class);
-        startActivity(intent);
-    }
-    
-    public void intButtonHandler(View view){
-    	Intent intent = new Intent(RandomizerActivity.this, IntActivity.class);
-        startActivity(intent);
-    }
-    
-    public void doubleButtonHandler(View view){
-    	Intent intent = new Intent(RandomizerActivity.this, DoubleActivity.class);
-        startActivity(intent);
-    }
+	@Override
+	public boolean onMenuItemSelected(int featureId, MenuItem item) {
+		if (featureId == 0) {
+			Intent intent = new Intent(RandomizerActivity.this, SettingsActivity.class);
+	        startActivity(intent);
+		}
+		return true;
+	}
 }
