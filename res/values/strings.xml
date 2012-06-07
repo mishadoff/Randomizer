@@ -53,8 +53,13 @@
     	<string name="helpDescription">What to do?</string>	
     	
     	<!-- About section resources -->
-    	<string name="aboutDescription">If you interested</string>	
-    	
+    	<string name="aboutDescription">
+    	    <![CDATA[
+    	    	Author: Mykhailo Kozik
+    	    	Version: 0.0.2
+    	    ]]>
+    	</string>	
+		    	
     	
     <string name="diceButton">Dice</string>
     <string-array name="diceType">

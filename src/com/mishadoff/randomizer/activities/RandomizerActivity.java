@@ -56,7 +56,7 @@ public class RandomizerActivity extends Activity {
 	
 	public void aboutClick(View view){
 		// TODO extract to resource
-    	new AlertDialog.Builder(this).setMessage("Author: Mykhailo Kozik\nVersion: 0.0.2").show();
+    	new AlertDialog.Builder(this).setMessage(R.string.aboutDescription).show();
 	}
 	
 	@Override
