@@ -8,7 +8,7 @@ import android.widget.TextView;
 import android.widget.TextView.BufferType;
 
 import com.mishadoff.randomizer.R;
-import com.mishadoff.randomizer.util.FlipCoinGenerator;
+import com.mishadoff.randomizer.generators.FlipCoinGenerator;
 
 public class FlipCoinActivity extends Activity {
 	private ImageView imageView;

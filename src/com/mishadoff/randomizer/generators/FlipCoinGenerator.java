@@ -1,4 +1,4 @@
-package com.mishadoff.randomizer.util;
+package com.mishadoff.randomizer.generators;
 
 import com.mishadoff.randomizer.strategies.DefaultRandomStrategy;
 import com.mishadoff.randomizer.strategies.RandomStrategy;
@@ -14,8 +14,7 @@ import com.mishadoff.randomizer.strategies.RandomStrategy;
  */
 public class FlipCoinGenerator {
 	private static boolean isFair = true;
-	// TODO add exception with greater than one or lower than zero
-	private static double trueProbability = 0.75;
+	private static double trueProbability = 0.5;
 	private static RandomStrategy random = new DefaultRandomStrategy();
 	
 	/**
@@ -43,5 +42,13 @@ public class FlipCoinGenerator {
 		random = randomStrategy;
 	}
 	
-	// TODO add settings change listener
+	public static void setTrueProbability(double prob) {
+		if (prob < 0 || prob > 1.0) {
+			throw new IllegalArgumentException("Probability must be in range [0..1]");
+		}
+		trueProbability = prob;
+	}
+	
+	// TODO add settings change listener for random strategy
+	// TODO add settings change listener for FlipCoin properties
 }

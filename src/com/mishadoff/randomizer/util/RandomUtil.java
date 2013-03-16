@@ -1,4 +1,4 @@
-package com.mishadoff.randomizer.activities;
+package com.mishadoff.randomizer.util;
 
 import java.util.Random;
 

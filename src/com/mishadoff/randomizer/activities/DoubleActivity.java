@@ -3,6 +3,7 @@ package com.mishadoff.randomizer.activities;
 import java.text.DecimalFormat;
 
 import com.mishadoff.randomizer.R;
+import com.mishadoff.randomizer.util.RandomUtil;
 
 import android.app.Activity;
 import android.os.Bundle;

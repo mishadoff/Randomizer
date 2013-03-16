@@ -1,6 +1,7 @@
 package com.mishadoff.randomizer.activities;
 
 import com.mishadoff.randomizer.R;
+import com.mishadoff.randomizer.util.RandomUtil;
 
 import android.app.Activity;
 import android.os.Bundle;

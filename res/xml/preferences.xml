@@ -5,7 +5,7 @@
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="opt_general_delay"
-            android:summary="Realistic behaviour or instant generation"
+            android:summary="Enables more realistic behaviour"
             android:title="@string/optDelay" />
 
         <ListPreference
