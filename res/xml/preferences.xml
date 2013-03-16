@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="General" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="opt_general_delay"
+            android:summary="Realistic behaviour or instant generation"
+            android:title="@string/optDelay" />
+
+        <ListPreference
+            android:defaultValue="Default"
+            android:entries="@array/optRandomStrategies_spinner"
+            android:entryValues="@array/optRandomStrategies_spinner"
+            android:key="opt_general_random"
+            android:summary="This preference allows to select an item in a array"
+            android:title="@string/optRandomStrategy" />
+
+        <ListPreference
+            android:defaultValue="English"
+            android:entries="@array/optLanguages_spinner"
+            android:entryValues="@array/optLanguages_spinner"
+            android:key="opt_general_lang"
+            android:summary="This preference allows to select an item in a array"
+            android:title="@string/optRandomStrategy" />
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Second Category" >
+        <EditTextPreference
+            android:name="EditText Preference"
+            android:defaultValue="Nothing"
+            android:key="editTextPref"
+            android:summary="This allows you to enter a string"
+            android:title="Edit This Text" />
+
+        <RingtonePreference
+            android:name="Ringtone Preference"
+            android:key="ringtonePref"
+            android:summary="Select a ringtone"
+            android:title="Ringtones" />
+
+        <PreferenceScreen
+            android:key="SecondPrefScreen"
+            android:summary="This is a second PreferenceScreen"
+            android:title="Second PreferenceScreen" >
+            <EditTextPreference
+                android:name="An other EditText Preference"
+                android:key="SecondEditTextPref"
+                android:summary="This is a preference in the second PreferenceScreen"
+                android:title="Edit text" />
+        </PreferenceScreen>
+
+        <Preference
+            android:key="customPref"
+            android:summary="This works almost like a button"
+            android:title="Custom Preference" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
