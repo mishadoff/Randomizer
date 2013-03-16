@@ -2,6 +2,7 @@ package com.mishadoff.randomizer.activities;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import android.widget.TextView.BufferType;
 
 import com.mishadoff.randomizer.R;
+import com.mishadoff.randomizer.audio.Sound;
 import com.mishadoff.randomizer.generators.FlipCoinGenerator;
 
 public class FlipCoinActivity extends Activity {
@@ -29,7 +31,7 @@ public class FlipCoinActivity extends Activity {
 	}
 
 	public void flipCoinClick(View view){
-		
+		// TODO refactor this method
 		// generate
 		boolean result = FlipCoinGenerator.flip();
 		// parameters to change
@@ -48,10 +50,12 @@ public class FlipCoinActivity extends Activity {
 			summaryResource = R.string.flipResultTail;
 		}
 		
+		final Activity ctx = this;	// obtain ctx to playy the sound
 		Runnable update = new Runnable() {
 			public void run() {
 		        imageView.setImageResource(imageResource);
 				textView.setText(summaryResource, BufferType.NORMAL);
+				//FIXME NPE on Emulator Sound.coinDrop(ctx);
 			}
 		};
 		handler.postAtTime(update, SystemClock.uptimeMillis() + DELAY_IN_MS);
